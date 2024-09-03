@@ -1,125 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Bogstras - The Video Game</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #8080ff;
-            font-family: 'Courier New', monospace;
-            color: #ffffff;
-        }
-        #game-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #ff4040;
-            text-shadow: 2px 2px #4040ff;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        #ruffle-player {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        #credits {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            max-width: 400px;
-            margin-top: 20px;
-        }
-        #credits h2 {
-            color: #ff4040;
-            text-shadow: 2px 2px #4040ff;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-        .credit-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .avatar {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-right: 20px;
-            object-fit: cover;
-        }
-        .credit-info {
-            text-align: left;
-        }
-        .role {
-            color: #ffff40;
-            font-weight: bold;
-            margin: 0;
-        }
-        .name {
-            margin: 5px 0;
-        }
-        a {
-            color: #40ffff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: rgb(46, 46, 46);
+        /* background-color: #8080ff; */
+        font-family: "Courier New", monospace;
+        color: #ffffff;
+      }
+      #game-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      h1 {
+        color: #ae0000;
+        text-shadow: 2px 2px #650000;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+      .instruction {
+        font-size: 1em;
+        color: #ffff40;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px #000000;
+      }
+      #ruffle-player {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 18px;
+      }
+      #credits {
+        background-color: rgb(81, 101, 250);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 400px;
+        margin-top: 20px;
+      }
+      #credits h2 {
+        color: #ffff40;
+        text-shadow: 2px 2px #4040ff;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+      .credit-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-right: 20px;
+        object-fit: cover;
+      }
+      .credit-info {
+        text-align: left;
+      }
+      .role {
+        color: #ffff40;
+        font-weight: bold;
+        margin: 0;
+      }
+      .name {
+        margin: 5px 0;
+      }
+      a {
+        color: #40ffff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="game-container">
-        <h1>The Bogstras: The Video Game</h1>
-        <div id="ruffle-player"></div>
+      <!-- <h1>The Bogstras: The Video Game</h1> -->
+      <p class="instruction">
+        Welcome to "The Bogstras: The Video Game" website. <br />
+        Click the big triangle button to start the game.
+      </p>
+      <div id="ruffle-player"></div>
     </div>
 
     <div id="credits">
-        <h2>Credits</h2>
-        <div class="credit-item">
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Eric-pIckYtfYI6jZ90yz7BvEJJgYwB63JY.png" alt="Eric Terpstra" class="avatar">
-            <div class="credit-info">
-                <p class="role">Game Designer and Programmer</p>
-                <p class="name">Eric Terpstra</p>
-            </div>
+      <h2>Credits</h2>
+      <div class="credit-item">
+        <img src="Eric.png" alt="Eric Terpstra" class="avatar" />
+        <div class="credit-info">
+          <p class="role">Game Designer and Programmer</p>
+          <p class="name">Eric Terpstra</p>
         </div>
-        <div class="credit-item">
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ceci-LFLzNtjxK0dWBI9qWTVmG2LQlFwQvD.png" alt="Cecihoney" class="avatar">
-            <div class="credit-info">
-                <p class="role">Pixel Art</p>
-                <p class="name"><a href="https://beacons.ai/cecihoney" target="_blank">Cecihoney</a></p>
-            </div>
+      </div>
+      <div class="credit-item">
+        <a href="https://beacons.ai/cecihoney" target="_blank">
+          <img src="ceci.png" alt="Cecihoney" class="avatar"
+        /></a>
+        <div class="credit-info">
+          <p class="role">Pixel Art</p>
+          <p class="name">
+            <a href="https://beacons.ai/cecihoney" target="_blank">Cecihoney</a>
+          </p>
         </div>
-        <div class="credit-item">
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jordan-3yGqM6BfGFUBdHgWUHoa7u80gkgZJN.jpg" alt="Jordan B. Sanders" class="avatar">
-            <div class="credit-info">
-                <p class="role">Soundtrack</p>
-                <p class="name"><a href="https://orderoftyr.bandcamp.com/album/the-bogstras-ost" target="_blank">Jordan B. Sanders</a></p>
-            </div>
+      </div>
+      <div class="credit-item">
+        <a
+          href="https://orderoftyr.bandcamp.com/album/the-bogstras-ost"
+          target="_blank"
+        >
+          <img
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jordan-3yGqM6BfGFUBdHgWUHoa7u80gkgZJN.jpg"
+            alt="Jordan B. Sanders"
+            class="avatar"
+          />
+        </a>
+        <div class="credit-info">
+          <p class="role">Soundtrack</p>
+          <p class="name">
+            <a
+              href="https://orderoftyr.bandcamp.com/album/the-bogstras-ost"
+              target="_blank"
+              >Jordan B. Sanders</a
+            >
+          </p>
         </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <script>
-        window.RufflePlayer = window.RufflePlayer || {};
-        window.addEventListener("load", (event) => {
-            const ruffle = window.RufflePlayer.newest();
-            const player = ruffle.createPlayer();
-            const container = document.getElementById("ruffle-player");
-            player.id = "player";
-            player.style.width = "640px";
-            player.style.height = "480px";
-            container.appendChild(player);
-            player.load("TheBogstras.swf");
-        });
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("ruffle-player");
+        player.id = "player";
+        player.style.width = "640px";
+        player.style.height = "480px";
+        container.appendChild(player);
+        player.load("TheBogstras.swf");
+      });
     </script>
-</body>
+  </body>
 </html>
